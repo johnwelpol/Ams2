@@ -2,7 +2,7 @@
     "compilerOptions": {
         "allowJs": true,
         "module": "ESNext",
-        "moduleResolution": "bundler",
+        "moduleResolution": "node",
         "jsx": "preserve",
         "strict": true,
         "isolatedModules": true,
@@ -13,8 +13,9 @@
         "skipLibCheck": true,
         "paths": {
             "@/*": ["./resources/js/*"],
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
-        }
+            "ziggy-js": ["./vendor/tightenco/ziggy"],
+            "@inertiajs/vue3": ["./node_modules/@inertiajs/vue3"],
+        },
     },
     "include": ["resources/js/**/*.ts", "resources/js/**/*.vue"]
 }
